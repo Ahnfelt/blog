@@ -1,2 +1,1 @@
-# blog
-My personal opinion on programming.
+https://github.com/Ahnfelt/blog/wiki
