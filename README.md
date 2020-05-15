@@ -1,3 +1,3 @@
 # Personal site
 
-**[ahnfelt.net][https://www.ahnfelt.net/]**
+**[ahnfelt.net](https://www.ahnfelt.net/)**
