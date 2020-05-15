@@ -1,1 +1,3 @@
-https://github.com/Ahnfelt/blog/wiki
+# Personal site
+
+https://www.ahnfelt.net/
