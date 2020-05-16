@@ -37,9 +37,7 @@
 #################
 
 (
-rm -rf ../hakyll &&
-cp -r ../blog ../hakyll &&
-cd ../hakyll &&
+cd hakyll &&
 stack build && 
 stack exec site build
 )
