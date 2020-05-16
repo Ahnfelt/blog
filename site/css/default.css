@@ -33,6 +33,10 @@ pre>code {
   padding: 0;
 }
 
+code kw {
+  font-weight: 600;
+}
+
 pre {
   font-size: 1.4rem;
   line-height: 1.3;
