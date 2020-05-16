@@ -33,7 +33,7 @@ pre>code {
   padding: 0;
 }
 
-code kw {
+code .kw {
   font-weight: 600;
 }
 
