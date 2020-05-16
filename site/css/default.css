@@ -12,6 +12,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+a, a:visited {
+  color: #900;
+}
+
 code {
   background-color: rgba(0, 0, 0, 0.04);
   font-size: 1.4rem;
