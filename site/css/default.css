@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 html {
   font-size: 62.5%;
@@ -8,7 +8,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.2;
   color: #333;
-  font-family: 'Mukta Malar', sans-serif;
+  font-family: 'Noto Serif', serif;
 }
 
 header {
