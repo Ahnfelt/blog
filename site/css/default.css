@@ -12,8 +12,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-code {
+:not(pre) code {
   background-color: rgba(0, 0, 0, 0.04);
+  font-family: 'Fira Code', monospace;
 }
 
 pre {
