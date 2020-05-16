@@ -59,6 +59,8 @@ article .header {
     width: 90%;
     margin: 0;
     padding: 0 5%;
+    font-size: 1.4rem;
+    line-height: 1.4;
   }
   header {
     margin: 4.2rem 0;
@@ -88,7 +90,6 @@ article .header {
     width: 90%;
     margin: 0;
     padding: 0 5%;
-    font-size: 1.4rem;
   }
   header {
     margin: 4.2rem 0;
