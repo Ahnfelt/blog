@@ -11,7 +11,7 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
-code {
+pre {
   font-size: 1.4rem;
   line-height: 1.2;
   color: #333;
