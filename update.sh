@@ -3,7 +3,7 @@
 #################
 
 # Blog directory
-# mkdir www
+# mkdir /var/www
 # mkdir hakyll
 # mkdir blog
 
@@ -17,7 +17,7 @@
 # wget -qO- https://get.haskellstack.org/ | sh
 
 # Get Hakyll (in hakyll)
-# stack install hakyll && stack exec hakyll-init site
+# stack install hakyll && stack exec hakyll-init .
 
 # Get screen
 # apt install screen
