@@ -74,10 +74,17 @@ footer {
 
 h1 {
   font-size: 3.0rem;
+  margin-top: 50px;
 }
 
 h2 {
   font-size: 2.7rem;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-top: 30px;
 }
 
 article .header {
