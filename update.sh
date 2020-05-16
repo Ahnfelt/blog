@@ -37,7 +37,7 @@
 #################
 
 (
-cd hakyll &&
+cd site &&
 stack build && 
 stack exec site build
 )
