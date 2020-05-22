@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Source+Serif+Pro:wght@400;600&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.1rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Source Serif Pro', serif;
+  text-rendering: optimizeLegibility;
+}
+
+a, a:visited {
+  color: #900;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.04);
+  font-size: 1.6rem;
+  font-family: 'Fira Code', monospace;
+  padding: 1px 3px;
+}
+
+pre>code {
+  background-color: transparent;
+  padding: 0;
+}
+
+code .kw {
+  font-weight: 600;
+}
+
+pre {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  padding: 1.1rem 1.5rem;
+  border-radius: 1px;  
+  background-color: rgba(0, 0, 0, 0.04);
+  font-family: 'Fira Code', monospace;
+  margin: 31px 0px;
+}
+
+hr {
+  border: none;
+  text-align: center;
+  margin-top: -20px;
+}
+
+hr::before {
+  content: '...';
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+header {
+  border-bottom: 0.2rem solid #000;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+  border-top: 0.2rem solid #000;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+h1::first-child {
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 2.9rem;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+hr+p:first-letter {
+  float: left;
+  font-family: Georgia, serif;
+  font-size: 50px;
+  line-height: 50px;
+  padding-top: 6px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+@media (max-width:399px) {
+  h1:first-child {
+    margin-top: 5px;
+  }
+  h1 { font-size: 30px; }
+  h2 { font-size: 25px; }
+  h3 { font-size: 22px; }
+  section {
+    padding: 0 10px;
+  }
+  body {
+    font-size: 18px;
+    line-height:1.4;
+    -webkit-text-size-adjust: 100%;
+  }
+  code, pre, pre>code {
+    font-size: 14px;
+  }
+  pre {
+    margin-left: -20px;
+    margin-right: -20px;
+    overflow-x: auto;
+  }
+}
