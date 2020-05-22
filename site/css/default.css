@@ -36,10 +36,6 @@ code .kw {
   font-weight: 600;
 }
 
-code .fu {
-  color: #900;
-}
-
 pre {
   font-size: 1.6rem;
   line-height: 1.4;
