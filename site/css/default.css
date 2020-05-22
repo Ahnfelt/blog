@@ -96,7 +96,7 @@ article hr+p:first-letter {
     margin-right: auto;
   }
 
-  pre {
+  code, pre {
     margin-left: 0;
     margin-right: 0;
     font-size: 16px;
