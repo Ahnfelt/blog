@@ -21,7 +21,7 @@ a:hover {
  text-decoration:underline
 }
 article {
- padding:10px 20px
+ padding:12px 20px
 }
 code {
  background-color:rgba(0,0,0,0.04);
@@ -39,11 +39,14 @@ code .kw {
 pre {
  font-size:14px;
  line-height:1.4;
- padding:-20px 31px;
+ padding:8px 12px;
  border-radius:1px;
  background-color:rgba(0,0,0,0.04);
  font-family:'Fira Code',monospace;
- margin:31px 0px
+ margin-top:31px;
+ margin-bottom:31px;
+ margin-left: -20px;
+ margin-right: -20px;
 }
 hr {
  border:none;
@@ -53,7 +56,7 @@ hr {
 hr::before {
  content:'...';
  font-size:40px;
- color:hsl(0,0,40%);
+ color:rgba(0,0,0,0.4);
  text-align:center;
  letter-spacing:10px
 }
@@ -72,7 +75,7 @@ h2 {
  margin-top:60px;
  margin-bottom:0
 }
-h1::first-child {
+h1:first-child {
  margin-top:0px
 }
 p {
