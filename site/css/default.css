@@ -7,7 +7,7 @@ body {
  margin:0;
  padding:0;
  color:hsl(0,0,80%);
- line-height:1.4;
+ line-height:1.5;
  font-size:18px;
  font-family:'Source Serif Pro',serif;
  text-rendering:optimizeLegibility
@@ -38,7 +38,7 @@ code .kw {
 }
 pre {
  font-size:14px;
- line-height:1.4;
+ line-height:1.5;
  padding:8px 12px;
  border-radius:1px;
  background-color:rgba(0,0,0,0.04);
