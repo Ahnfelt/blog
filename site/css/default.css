@@ -89,5 +89,18 @@ article hr+p:first-letter {
   font-family:Georgia,serif;
 }
 @media (min-width:400px) {
-  
+
+h1 {
+ font-size:35px
+}
+h2 {
+ font-size:32px
+}
+h3 {
+ font-size:28px
+}
+body {
+  font-size: 21px;
+}
+
 }
