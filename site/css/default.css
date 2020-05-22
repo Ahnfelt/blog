@@ -137,7 +137,7 @@ hr+p:first-letter {
     -webkit-text-size-adjust: 100%;
   }
   code, pre, pre>code {
-    font-size: 12px;
+    font-size: 14px;
   }
   pre {
     margin-left: -20px;
