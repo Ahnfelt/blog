@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Mukta+Malar:wght@700&family=Source+Serif+Pro:wght@400&display=swap');
 html {
   font-size: 62.5%;
 }
@@ -87,16 +87,19 @@ footer {
 h1 {
   font-size: 3.5rem;
   margin-top: 50px;
+  font-family: 'Mukta Malar', serif;
 }
 
 h2 {
   font-size: 3.0rem;
   margin-top: 50px;
+  font-family: 'Mukta Malar', serif;
 }
 
 h3 {
   font-size: 2.7rem;
   margin-top: 30px;
+  font-family: 'Mukta Malar', serif;
 }
 
 article .header {
