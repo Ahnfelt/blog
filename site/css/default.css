@@ -136,7 +136,7 @@ hr+p:first-letter {
     line-height:1.4
   }
   code, pre {
-    font-size: 10px;
+    font-size: 12px !important;
   }
   pre {
     margin-left: -20px;
