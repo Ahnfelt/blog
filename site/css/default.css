@@ -132,11 +132,11 @@ hr+p:first-letter {
     padding: 0 10px;
   }
   body {
-    font-size: 16px;
+    font-size: 18px;
     line-height:1.4
   }
   code, pre {
-    font-size: 12px;
+    font-size: 10px;
   }
   pre {
     margin-left: -20px;
