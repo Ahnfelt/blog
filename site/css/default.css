@@ -123,7 +123,7 @@ hr+p:first-letter {
 
 @media (max-width:399px) {
   h1:first-child {
-    margin-top: 0;
+    margin-top: 5px;
   }
   h1 { font-size: 30px; }
   h2 { font-size: 25px; }
