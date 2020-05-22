@@ -2,7 +2,6 @@
 
 html {
   font-size: 62.5%;
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -134,7 +133,8 @@ hr+p:first-letter {
   }
   body {
     font-size: 18px;
-    line-height:1.4
+    line-height:1.4;
+    -webkit-text-size-adjust: 100%;
   }
   code, pre, pre>code {
     font-size: 12px;
