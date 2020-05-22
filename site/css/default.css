@@ -84,6 +84,8 @@ p {
  margin-bottom:23px
 }
 article hr+p:first-letter {
+  -webkit-initial-letter: 2;
+  initial-letter: 2;
   font-family:Georgia,serif;
 }
 @media (min-width:400px) {
