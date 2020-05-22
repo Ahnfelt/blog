@@ -79,7 +79,7 @@ h3 {
 h1:first-child {
  margin-top:0px
 }
-h2+p,h2+p,h3+p { margin-top: 5px;}
+h2+p,h2+p,h3+p { margin-top: 20px;}
 p {
  margin-top:23px;
  margin-bottom:23px
