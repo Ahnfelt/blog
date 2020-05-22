@@ -89,15 +89,5 @@ article hr+p:first-letter {
   font-family:Georgia,serif;
 }
 @media (min-width:400px) {
-article hr+p:first-letter {
-  -webkit-initial-letter: normal;
-  initial-letter: normal;
-  float:left;
-  font-family:Georgia,serif;
-  font-size:50px;
-  line-height:50px;
-  padding-top:6px;
-  padding-right:8px;
-  padding-left:3px
-}
+  
 }
