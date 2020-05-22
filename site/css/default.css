@@ -43,7 +43,7 @@ pre {
   border-radius: 1px;  
   background-color: rgba(0, 0, 0, 0.04);
   font-family: 'Fira Code', monospace;
-  margin: 35px 0px;
+  margin: 32px 0px;
 }
 
 hr {
@@ -103,8 +103,8 @@ h3 {
 }
 
 p {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 hr+p:first-letter {
