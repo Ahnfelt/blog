@@ -87,16 +87,19 @@ footer {
 h1 {
   font-size: 3.5rem;
   margin-top: 60px;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 3.2rem;
   margin-top: 60px;
+  margin-bottom: 0;
 }
 
 h3 {
   font-size: 2.9rem;
   margin-top: 40px;
+  margin-bottom: 0;
 }
 
 hr+p:first-letter {
