@@ -116,6 +116,7 @@ hr+p:first-letter {
   float: left;
   font-family: Georgia, serif;
   font-size: 55px;
+  line-height: 1;
   padding-top: 6px;
   padding-right: 8px;
   padding-left: 3px;
