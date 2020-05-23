@@ -11,6 +11,8 @@ import com.vladsch.flexmark.util.data.MutableDataSet
 import com.vladsch.flexmark.util.misc.Extension
 import com.vladsch.flexmark.util.sequence.BasedSequence
 
+import scala.util.matching.Regex
+
 object Main {
     def main(arguments : Array[String]) : Unit = {
 
@@ -21,30 +23,16 @@ object Main {
             StrikethroughExtension.create()
         ))
 
-        val parser = Parser.builder(options).postProcessorFactory(new AuthorPostProcessorFactory()).build()
+        val parser = Parser.builder(options).build()
         val renderer = HtmlRenderer.builder(options).build()
 
         val document = parser.parse("# foo\n\nThis is *Sparta*\n\nHello")
-        val html = renderer.render(document)
+        val title = document.getFirstChild match { case heading : Heading => heading.getText.toString; case _ => "" }
+        val documentHtml = renderer.render(document)
+        val authorHtml = "<div>XXXXXXXXX</div>"
+        val html = documentHtml.replaceFirst("</h1>", "</h1>\n" + Regex.quoteReplacement(authorHtml))
         println(html)
 
     }
-}
 
-class AuthorPostProcessor() extends NodePostProcessor {
-    var title = ""
-    override def process(state : NodeTracker, node : Node) : Unit = {
-        node match {
-            case heading : Heading if heading.getPrevious == null =>
-                title = heading.getText.toString
-                val authorNode = new HtmlBlock(BasedSequence.of("<div>XXXXXXXXXXX</div>"))
-                authorNode.insertAfter(heading)
-                state.nodeAddedWithChildren(authorNode)
-        }
-    }
-}
-
-class AuthorPostProcessorFactory() extends NodePostProcessorFactory(false) {
-    addNodes(classOf[Heading])
-    override def apply(document : Document) = new AuthorPostProcessor()
 }
