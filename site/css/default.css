@@ -53,8 +53,6 @@ p img {
   display: block;
   text-align: center;
   max-width: 100%;
- margin-left:-20px;
- margin-right:-20px;
 }
 p img+br {
   display: none;
@@ -133,9 +131,6 @@ article hr+p:first-letter {
  }
  h3 {
   font-size:27px
- }
- p img {
-  margin: 0;
  }
  p img+br+em {
   font-size: 15px;
