@@ -95,7 +95,7 @@ article hr+p:first-letter {
 }
 @media (min-width:500px) {
  article {
-  max-width:750px;
+  max-width:700px;
   margin-left:auto;
   margin-right:auto;
   padding-top:60px
