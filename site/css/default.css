@@ -58,7 +58,7 @@ p img+br {
   display: none;
 }
 p img+br+em {
-  font-size: 14px;
+  font-size: 13px;
   font-family: sans-serif;
   font-style: normal;
   display: block;
@@ -121,7 +121,7 @@ article hr+p:first-letter {
  pre {
   margin-left:0;
   margin-right:0;
-  font-size:15px
+  font-size:14px
  }
  h1 {
   font-size:35px
