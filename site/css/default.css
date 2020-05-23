@@ -93,7 +93,7 @@ article hr+p:first-letter {
  initial-letter:2;
  font-family:Georgia,serif
 }
-@media (min-width:400px) {
+@media (min-width:500px) {
  article {
   max-width:750px;
   margin-left:auto;
