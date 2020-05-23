@@ -50,33 +50,29 @@ pre {
  overflow-x:auto
 }
 p img {
-  display: block;
-  text-align: center;
-  max-width: 100%;
+ display:block;
+ text-align:center;
+ max-width:100%
 }
 p img+br {
-  display: none;
+ display:none
 }
 p img+br+em {
-  font-size: 12px;
-  font-family: sans-serif;
-  font-style: normal;
-  display: block;
-  text-align: center;
-  margin-top: 5px;
-  color: rgba(0,0,0,0.5);
+ font-size:12px;
+ font-family:sans-serif;
+ font-style:normal;
+ display:block;
+ text-align:center;
+ margin-top:5px;
+ color:rgba(0,0,0,0.5)
 }
 hr {
  border:none;
  text-align:center;
- margin-top:-20px
-}
-hr::before {
- content:'...';
- font-size:40px;
- color:rgba(0,0,0,0.4);
- text-align:center;
- letter-spacing:10px
+ height: 100px;
+ width: 100%;
+ background: url('../images/floral-1751088_640.png') no-repeat center center;
+ background-size: 200px auto;
 }
 h1 {
  font-size:30px
@@ -133,7 +129,7 @@ article hr+p:first-letter {
   font-size:27px
  }
  p img+br+em {
-  font-size: 15px;
+  font-size:15px
  }
  body {
   font-size:20px
