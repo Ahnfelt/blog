@@ -58,7 +58,7 @@ p img+br {
   display: none;
 }
 p img+br+em {
-  font-size: 13px;
+  font-size: 12px;
   font-family: sans-serif;
   font-style: normal;
   display: block;
@@ -133,7 +133,7 @@ article hr+p:first-letter {
   font-size:27px
  }
  p img+br+em {
-  font-size: 16px;
+  font-size: 15px;
  }
  body {
   font-size:20px
