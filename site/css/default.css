@@ -49,6 +49,23 @@ pre {
  margin-right:-20px;
  overflow-x:auto
 }
+p img {
+  display: block;
+  text-align: center;
+  max-width: 100%;
+}
+p img+br {
+  display: none;
+}
+p img+br+em {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-style: normal;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  color: rgba(0,0,0,0.5);
+}
 hr {
  border:none;
  text-align:center;
