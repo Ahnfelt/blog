@@ -45,9 +45,9 @@ pre {
  font-family:'Fira Code',monospace;
  margin-top:31px;
  margin-bottom:31px;
- margin-left: -20px;
- margin-right: -20px;
- overflow-x: auto;
+ margin-left:-20px;
+ margin-right:-20px;
+ overflow-x:auto
 }
 hr {
  border:none;
@@ -79,42 +79,43 @@ h3 {
 h1:first-child {
  margin-top:0px
 }
-h2+p,h2+p,h3+p { margin-top: 10px;}
+h2+p,
+h2+p,
+h3+p {
+ margin-top:10px
+}
 p {
  margin-top:23px;
  margin-bottom:23px
 }
 article hr+p:first-letter {
-  -webkit-initial-letter: 2;
-  initial-letter: 2;
-  font-family:Georgia,serif;
+ -webkit-initial-letter:2;
+ initial-letter:2;
+ font-family:Georgia,serif
 }
 @media (min-width:400px) {
-
-  article {
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 60px;
-  }
-
-  code, pre {
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 16px;
-  }
-
-h1 {
- font-size:35px
-}
-h2 {
- font-size:32px
-}
-h3 {
- font-size:28px
-}
-body {
-  font-size: 21px;
-}
-
+ article {
+  max-width:750px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:60px
+ }
+ code,
+ pre {
+  margin-left:0;
+  margin-right:0;
+  font-size:16px
+ }
+ h1 {
+  font-size:35px
+ }
+ h2 {
+  font-size:30px
+ }
+ h3 {
+  font-size:27px
+ }
+ body {
+  font-size:20px
+ }
 }
