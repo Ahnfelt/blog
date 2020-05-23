@@ -134,4 +134,7 @@ article hr+p:first-letter {
  body {
   font-size:20px
  }
+hr {
+ background-size: 220px auto;
+}
 }
