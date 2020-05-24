@@ -1,8 +1,6 @@
 import java.io.File
 import java.nio.file._
 
-import scala.util.matching.Regex
-
 object Main {
 
     def main(arguments : Array[String]) : Unit = {
@@ -24,21 +22,17 @@ object Main {
         assert(postsFile.exists())
         for(postFile <- postsFile.listFiles().toList if postFile.isDirectory) {
             val articleFile = new File(postFile, "article.md")
-            if(articleFile.exists()) {
+            val indexFile = new File(postFile, "index.html")
+            val modified = !indexFile.exists() || articleFile.lastModified() > indexFile.lastModified()
+            if(articleFile.exists() && modified) {
                 val articleInfo = articleProcessor.process(articleFile.toPath)
                 val articleHtml = postTemplate.replace("$body$", articleInfo.articleHtml)
                 val articleTitle = articleInfo.title.getOrElse("").
                     replace("<", "&lt;").replace(">", "&gt;").replace("&", "&amp;")
                 val pageHtml = defaultTemplate.replace("$body$", articleHtml).replace("$title$", articleTitle)
-                println(pageHtml)
+                Files.write(indexFile.toPath, pageHtml.getBytes("UTF-8"))
             }
         }
-
-        // For each post folder
-        //   Generate the index.html
-        //   Sync the folders, deleting old files and folders
-        //   Place the new index.html in the folder
-        // Delete the folders that have no corresponding folder
 
     }
 }
