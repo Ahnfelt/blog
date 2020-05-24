@@ -67,12 +67,16 @@ p img+br+em {
  color:rgba(0,0,0,0.5)
 }
 hr {
- border:none;
- text-align:center;
- height: 100px;
- width: 100%;
- background: url('../images/hr.png') no-repeat center center;
- background-size: auto 60px;
+  border: none;
+  text-align: center;
+  margin-top: -20px;
+}
+hr::before {
+  content: '...';
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  letter-spacing: 10px;
 }
 h1 {
  font-size:30px
