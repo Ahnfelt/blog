@@ -36,13 +36,15 @@ class ArticleProcessor(authorHtmlTemplate : String) {
         val document = parser.parse(markdown)
         val (title, image, teaser) = extractMeta(document)
         val documentHtml = renderer.render(document)
-        val authorHtml = authorHtmlTemplate
+        val publicationDate = None
+        val authorHtml = authorHtmlTemplate.replace("$date$", "Draft")
         val html = documentHtml.replaceFirst("</h1>", "</h1>\n" + Regex.quoteReplacement(authorHtml))
         ArticleInfo(
             articleHtml = html,
             title = Some(title.trim).filter(_.nonEmpty),
             imageUrl = Some(image.trim).filter(_.nonEmpty),
             teaser = Some(teaser.trim).filter(_.nonEmpty),
+            publicationDate = publicationDate
         )
     }
 
@@ -79,5 +81,6 @@ case class ArticleInfo(
     articleHtml : String,
     title : Option[String],
     imageUrl : Option[String],
-    teaser : Option[String]
+    teaser : Option[String],
+    publicationDate : Option[String]
 )
