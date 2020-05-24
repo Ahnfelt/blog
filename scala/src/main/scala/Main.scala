@@ -9,9 +9,8 @@ object Main {
         val authorTemplateFile = new File(templatesFile, "post-author.html")
         val authorTemplate = new String(Files.readAllBytes(authorTemplateFile.toPath), "UTF-8")
 
-        val postsFile = new File(arguments(0))
-
         val articleProcessor = new ArticleProcessor(authorTemplate)
+        val postsFile = new File(arguments(0))
         assert(postsFile.exists())
         for(postFile <- postsFile.listFiles().toList if postFile.isDirectory) {
             val articleFile = new File(postFile, "article.md")
