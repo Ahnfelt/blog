@@ -23,8 +23,10 @@ object Main {
         for(postFile <- postsFile.listFiles().toList if postFile.isDirectory) {
             val articleFile = new File(postFile, "article.md")
             val indexFile = new File(postFile, "index.html")
-            val modified = !indexFile.exists() || articleFile.lastModified() > indexFile.lastModified()
-            if(articleFile.exists() && modified) {
+            val modified = articleFile.exists() && (
+                !indexFile.exists() || articleFile.lastModified() > indexFile.lastModified()
+            )
+            if(modified) {
                 val articleInfo = articleProcessor.process(articleFile.toPath)
                 val articleHtml = postTemplate.replace("$body$", articleInfo.articleHtml)
                 val articleTitle = articleInfo.title.getOrElse("").
