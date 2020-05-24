@@ -72,7 +72,7 @@ hr {
  height: 100px;
  width: 100%;
  background: url('../images/hr.png') no-repeat center center;
- background-size: 100px auto;
+ background-size: auto 60px;
 }
 h1 {
  font-size:30px
