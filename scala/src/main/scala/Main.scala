@@ -34,5 +34,11 @@ object Main {
             }
         }
 
+        // For each post folder
+        //   Generate the index.html
+        //   Sync the folders, deleting old files and folders
+        //   Place the new index.html in the folder
+        // Delete the folders that have no corresponding folder
+
     }
 }
