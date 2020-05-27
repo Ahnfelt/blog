@@ -1,5 +1,7 @@
+import $file.ArticleProcessor
+
 import java.io.File
-import java.nio.file._
+import java.nio.file.Files
 
 object Main {
 
@@ -16,7 +18,7 @@ object Main {
         val defaultTemplateFile = new File(templatesFile, "default.html")
         val defaultTemplate = new String(Files.readAllBytes(defaultTemplateFile.toPath), "UTF-8")
 
-        val articleProcessor = new ArticleProcessor(authorTemplate)
+        val articleProcessor = new ArticleProcessor.ArticleProcessor(authorTemplate)
 
         val postsFile = new File(arguments(0))
         assert(postsFile.exists())
@@ -37,4 +39,5 @@ object Main {
         }
 
     }
+
 }

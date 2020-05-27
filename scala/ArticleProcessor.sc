@@ -1,4 +1,5 @@
-import java.io.File
+import $ivy.`com.vladsch.flexmark:flexmark-all:0.61.30`
+
 import java.nio.file.{Files, Path, Paths}
 import java.util
 
